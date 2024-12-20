@@ -1,122 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjali</title>
-    <!-- Include Bootstrap -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curriculum Vitae</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar {
-            background-color: #6c757d; /* Grey color */
-        }
-
-        .navbar-brand {
-            font-weight: bold;
-            color: #fff !important;
-        }
-
-        .navbar-nav .nav-link {
-            color: #fff !important;
-        }
-
         h1 {
-            font-size: 2.5rem;
-            margin-top: 2rem;
+            font-size: 34px;
             text-align: center;
-            font-weight: bold;
+        }
+
+        h2, h3 {
+            font-size: 28px;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
         }
 
         .container {
             max-width: 940px;
-            margin: 2rem auto;
+            margin: auto;
         }
 
-        .content img {
-            max-height: 200px; /* Limit the height to 200px */
-            width: auto; /* Automatically adjust the width to maintain aspect ratio */
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-
-        .content {
-            font-size: 1.2rem;
-            line-height: 1.8;
-        }
-
-        .row {
-            margin-top: 20px;
-        }
-
-        footer {
-            margin-top: 2rem;
-            padding: 1rem;
-            background-color: #6c757d; /* Grey color */
-            text-align: center;
-            color: #fff;
+        p, ul li {
+            font-size: 16px;
+            line-height: 1.6;
         }
     </style>
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Anjali</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="CV.html">Curriculum Vitae</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="research.html">Research</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Include the Header -->
+    <div id="header">
+        <script>
+            // Dynamically include the header HTML
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        </script>
+    </div>
 
-    <!-- Page Header -->
     <div class="container">
-        <h1>Anjali</h1>
+        <h1>Curriculum Vitae</h1>
+        <!-- Content Goes Here -->
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>A diligent and results-driven quantitative researcher with a Master by Research in Economics...</p>
+        </section>
+        <!-- Other sections as per your example -->
     </div>
-
-    <!-- Content Section -->
-    <div class="container content">
-        <div class="row">
-            <div class="col-md-12">
-                <img src="anjali_profile2.jpeg" alt="Anjali's Profile Picture">
-                <p>I am a quantitative researcher with a Master by Research in Economics from
-                    the University of Exeter, specializing in Applied Research, Advanced Econometrics, and Machine Learning.</p>
-                <p>I currently serve as a Graduate Teaching Assistant and Research Assistant at the University of Exeter Business School. My
-                    expertise lies in applying Natural Language Processing (NLP), advanced data analysis, and statistical modeling.</p>
-                <p>Previously, I worked at the University of Kent as a Research Assistant, curating datasets on Indian political dynasties using advanced machine learning tools.</p>
-                <p>My research interests span Political Economy, Development Economics, and Deep Learning. I am proficient in Python, R, and STATA, with capabilities in AI-driven analytics, Web Scraping, and Data Visualization.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        &copy; 2024 Anjali. All rights reserved.
-    </footer>
 </body>
 
 </html>
