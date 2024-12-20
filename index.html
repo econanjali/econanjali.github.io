@@ -13,7 +13,6 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
         }
 
         .navbar {
@@ -21,38 +20,39 @@
         }
 
         .navbar-brand {
-            color: #fff !important;
+            display: none; /* Hide the brand name */
         }
 
         .navbar-nav .nav-link {
             color: #fff !important;
         }
 
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
         .container {
             max-width: 940px;
             margin: 2rem auto;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 1rem;
         }
 
         .content img {
-            max-height: 300px;
-            width: auto;
+            max-height: 300px; /* Limit the height to 300px */
+            width: auto; /* Automatically adjust the width to maintain aspect ratio */
             border-radius: 10px;
         }
 
-        .content p {
+        .content {
             font-size: 1.2rem;
             line-height: 1.8;
+        }
+
+        .header-container {
+            text-align: center;
+            margin-top: 1rem;
         }
 
         footer {
@@ -69,7 +69,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Anjali</a>
+            <!-- Removed the navbar-brand -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -92,27 +92,30 @@
         </div>
     </nav>
 
+ 
     <!-- Content Section -->
     <div class="container content">
-        <h1>Anjali</h1>
         <div class="row">
             <!-- Profile Picture Column -->
             <div class="col-md-4 text-center">
                 <img src="anjali_profile2.jpeg" alt="Anjali's Profile Picture">
             </div>
-            <!-- Description Column -->
+          <!-- Description Column -->
             <div class="col-md-8">
-                <p>Hello, I am Anjali, an applied quantitative researcher pursuing a PhD in Economics at the University of Exeter. My research focuses on utilizing cutting-edge methodologies in Applied Research, Advanced Econometrics, and Machine Learning.</p>
-                <p>Currently, I work as a Graduate Teaching Assistant and Research Assistant at the University of Exeter Business School. My role involves applying Natural Language Processing (NLP), advanced data analysis, and statistical modeling to complex datasets.</p>
-                <p>Previously, I contributed as a Research Assistant, where I curated datasets on Indian political dynasties using state-of-the-art machine learning techniques. This experience honed my expertise in data engineering and applied analytics.</p>
-                <p>My research interests include Political Economy, Development Economics, and Deep Learning. I am proficient in Python, R, and STATA, with hands-on experience in AI-driven analytics, Web Scraping, and Data Visualization.</p>
+                <p>I am a quantitative researcher with a Master by Research in Economics from
+                    the University of Exeter, specializing in Applied Research, Advanced Econometrics, and Machine Learning.</p>
+                <p>I currently serve as a Graduate Teaching Assistant and Research Assistant at the University of Exeter Business School. My
+                    expertise lies in applying Natural Language Processing (NLP), advanced data analysis, and statistical modeling.</p>
+                <p>Previously, I worked at the University of Kent as a Research Assistant, curating datasets on Indian political dynasties using advanced machine learning tools.</p>
+                <p>My research interests span Political Economy, Development Economics, and Deep Learning. I am proficient in Python, R, and STATA, with capabilities in AI-driven analytics, Web Scraping, and Data Visualization.</p>
             </div>
         </div>
     </div>
 
+
     <!-- Footer -->
     <footer>
-        &copy; 2024 Anjali. All rights reserved.
+       &infin;
     </footer>
 </body>
 
